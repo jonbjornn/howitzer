@@ -83,3 +83,4 @@ production:
   database: howitzer_production
   username: howitzer
   password: <%= ENV['HOWITZER_DATABASE_PASSWORD'] %>
+  pool: <%= ENV['MAX_THREADS'] %>
