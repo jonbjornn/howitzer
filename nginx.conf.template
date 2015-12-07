@@ -2,7 +2,6 @@ server {
 
   include /home/dokku/howitzer/nginx.conf.d/*.conf;
 
-  worker_processes 2;
   worker_connections 4096;
 
 }
