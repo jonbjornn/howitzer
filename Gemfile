@@ -4,6 +4,12 @@ ruby '2.2.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 
+# Use Imba language for views
+gem 'imba-rails'
+# You should also depend on a specific version of Imba:
+gem 'imba-source', '~> 0.12.1'
+
+
 # Use sqlite3 as the dev database for Active Record
 gem 'sqlite3', group: :development
 # Use postgresql as the database for Active Record
