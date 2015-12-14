@@ -13,17 +13,22 @@ process.env.BABEL_ENV = TARGET;
 var common = {
   entry: PATHS.app,
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.imba']
   },
   module: {
     loaders: [
+      {
+        test: /\.imba/,
+        loaders: ['imba-loader'],
+        include: PATHS.app
+      },
       {
         test: /\.css$/,
         loaders: ['style', 'css'],
         include: PATHS.app
       },
       {
-        test: /\.jsx?$/,
+        test: /\.js?$/,
         loaders: ['babel'],
         include: PATHS.app
       }
